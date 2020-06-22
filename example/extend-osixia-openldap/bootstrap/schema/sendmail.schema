@@ -1,12 +1,12 @@
 attributetype ( 1.3.6.1.4.1.6152.10.3.1.10
 	NAME 'location'
-	DESC 'location of rhperson'
+	DESC 'location of rhPerson'
 	EQUALITY caseIgnoreIA5Match
 	SUBSTR caseIgnoreIA5SubstringsMatch
 	SYNTAX 1.3.6.1.4.1.1466.115.121.1.26{256} )
 	
 objectclass ( 1.3.6.1.4.1.6152.10.3.2.10
-	NAME 'rhperson'
-	SUP top STRUCTURAL
-	DESC 'rhperson definition'
+	NAME 'rhPerson'
+	SUP organizationalPerson STRUCTURAL
+	DESC 'rhPerson definition'
 	MAY ( location ) )
